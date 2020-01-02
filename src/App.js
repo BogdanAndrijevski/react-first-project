@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import styled from 'styled-components';
 import Person from './Person/Person';
+
+const StyledButton = styled.button`
+background-color: green;
+font: inherit;
+color: white;
+border: 3px solid lime;
+padding: 8px;
+cursor: pointer;
+
+&:hover {
+  background-color: lightgreen;
+  color: black;
+}
+`
 
 class App extends Component {
   state = {
@@ -93,16 +107,17 @@ class App extends Component {
     }
 
     return (
-     
-        <div className="App">
-          <h1>Hi, I'm a React App</h1>
-          <p className={classes.join(' ')}>This is really working!!!</p>
-          <button
-            style={style}
-            onClick={this.togglePersonsHandler}>Toggle Persons</button>
-          {persons}
-        </div>
-       
+
+      <div className="App">
+        <h1>Hi, I'm a React App</h1>
+        <p className={classes.join(' ')}>This is really working!!!</p>
+        <StyledButton
+          onClick={this.togglePersonsHandler}>
+          Toggle Persons
+        </StyledButton>
+        {persons}
+      </div>
+
     );
     // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
   }
@@ -110,4 +125,4 @@ class App extends Component {
 
 export default App;
 
-// tut 70 e na red
+// tut 72 e na red
