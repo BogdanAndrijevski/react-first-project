@@ -15,7 +15,19 @@ body{
   font-weight: bold;
 }
 
+.button{
+background-color: green;
+font: inherit;
+color: white;
+border: 3px solid lime;
+padding: 8px;
+cursor: pointer;
+}
 
+.button:hover {
+  background-color: lightgreen;
+  color: black;
+}
 
 
 
