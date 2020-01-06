@@ -48,7 +48,9 @@ class App extends Component {
 
   render() {
     let persons = null;
+    // console.log('firs ', btnClass);
     let btnClass = '';
+    console.log(btnClass.toString());
 
     if (this.state.showPersons) {
       persons = (
@@ -63,7 +65,7 @@ class App extends Component {
           })}
         </div>
       );
-      
+
       btnClass = classes.Red;
 
       // style.backgroundColor = 'red';
@@ -84,18 +86,18 @@ class App extends Component {
     }
 
     return (
-
-      <div className={classes.App}>
-        <h1>Hi, I'm a React App</h1>
-        <p className={assignedClasses.join(' ')}>This is really working!!!</p>
-        <button
-          // alt={this.state.showPersons}
-          className={btnClass}
-          onClick={this.togglePersonsHandler}>
-          Toggle Persons
+      
+    <div className={classes.App}>
+      <h1>Hi, I'm a React App</h1>
+      <p className={assignedClasses.join(' ')}>This is really working!!!</p>
+      <button
+        // alt={this.state.showPersons}
+        className={btnClass}
+        onClick={this.togglePersonsHandler}>
+        Toggle Persons
         </button>
-        {persons}
-      </div>
+      {persons}
+    </div>
 
     );
     // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
