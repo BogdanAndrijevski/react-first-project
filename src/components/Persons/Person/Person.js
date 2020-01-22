@@ -3,6 +3,8 @@ import classes from './Person.css';
 
 
 const person = (props) => {
+    console.log('[person.js] rendering...');
+
     // const style = {
     //     '@media (min-width: 500px)': {
     //         width: '450px',
