@@ -5,7 +5,7 @@ const cockpit = (props) => {
 
     let assignedClasses = [];
     let btnClass = '';
-    
+
     if (props.showPersons) {
         btnClass = classes.Red;
     }
@@ -16,7 +16,7 @@ const cockpit = (props) => {
     if (props.persons.length <= 1) {
         assignedClasses.push(classes.bold); // classes = ['red', 'bold']
     }
-
+   
     return (
         <div className={classes.Cockpit}>
             <h1>Hi, I'm a React App</h1>

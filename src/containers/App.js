@@ -79,7 +79,7 @@ class App extends Component {
       
     <div className={classes.App}>
       <Cockpit
-      showPersons={this.setState.showPersons}
+      showPersons={this.state.showPersons}
       persons={this.state.persons}
       clicked={this.togglePersonsHandler}
       />
@@ -93,4 +93,4 @@ class App extends Component {
 
 export default App;
 
-// tut 75 e na red
+// tut 87 e na red - 86. Splitting an App Into Components
