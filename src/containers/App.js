@@ -110,4 +110,4 @@ class App extends Component {
 
 export default App;
 
-// tut 89 e na red - 88. Class-based vs Functional Components
+// tut 91 e na red - 90. Component Creation Lifecycle in Action
