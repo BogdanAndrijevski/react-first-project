@@ -119,4 +119,4 @@ shouldComponentUpdate(nextProps, nextState){
 
 export default App;
 
-// tut 91 e na red - 90. Component Creation Lifecycle in Action
+// tut 94 e na red - 93. Using useEffect() in Functional Components
