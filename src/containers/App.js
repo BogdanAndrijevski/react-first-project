@@ -119,4 +119,4 @@ shouldComponentUpdate(nextProps, nextState){
 
 export default App;
 
-// tut 94 e na red - 93. Using useEffect() in Functional Components
+// tut 95 e na red - 94. Controlling the useEffect() Behavior
