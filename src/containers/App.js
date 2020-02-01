@@ -18,7 +18,8 @@ class App extends Component {
       { id: 'asdf11', name: 'Stephanie', age: 26 }
     ],
     otherState: 'some other value',
-    showPersons: false
+    showPersons: false,
+    showCockpit: true
   }
 
   static getDerivedStateFromProps(props, state){
@@ -103,12 +104,13 @@ shouldComponentUpdate(nextProps, nextState){
     return (
       
     <div className={classes.App}>
-      <Cockpit
+      <button onClick={() => {this.setState({showCockpit : false})}}>Remoev Cockpit</button>
+      { this.state.showCockpit ? <Cockpit
       title={this.props.appTitle}
       showPersons={this.state.showPersons}
       persons={this.state.persons}
       clicked={this.togglePersonsHandler}
-      />
+      /> : null}
       {persons}
     </div>
 
@@ -119,4 +121,4 @@ shouldComponentUpdate(nextProps, nextState){
 
 export default App;
 
-// tut 95 e na red - 94. Controlling the useEffect() Behavior
+// tut 96 e na red - 95. Cleaning up with Lifecycle Hooks & useEffect()
