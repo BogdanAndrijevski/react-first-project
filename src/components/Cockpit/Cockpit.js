@@ -6,15 +6,18 @@ const cockpit = (props) => {
     useEffect(()=>{
         console.log('[cockpit.js] useEffect');
         // Http request
-        setTimeout(()=>{
+       const timer =  setTimeout(()=>{
             alert('Saved data to cloud!')
         }, 1000)
         return ()=>{
+            clearTimeout(timer);
             console.log('[cockpit.js] cleanup Work in useEffect');
 
         }
     },[]) // just one, just initially
     // },[props.persons])
+
+
     useEffect(()=>{
         console.log('[cockpit.js] 2nd useEffect');
         return ()=>{
