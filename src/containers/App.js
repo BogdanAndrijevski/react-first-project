@@ -108,7 +108,7 @@ shouldComponentUpdate(nextProps, nextState){
       { this.state.showCockpit ? <Cockpit
       title={this.props.appTitle}
       showPersons={this.state.showPersons}
-      persons={this.state.persons}
+      personsLength={this.state.persons.length}
       clicked={this.togglePersonsHandler}
       /> : null}
       {persons}
@@ -121,4 +121,4 @@ shouldComponentUpdate(nextProps, nextState){
 
 export default App;
 
-// tut 96 e na red - 95. Cleaning up with Lifecycle Hooks & useEffect()
+// tut 99 e na red - 98. Optimizing Functional Components with React.memo()
