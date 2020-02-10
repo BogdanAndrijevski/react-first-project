@@ -121,4 +121,4 @@ shouldComponentUpdate(nextProps, nextState){
 
 export default App;
 
-// tut 99 e na red - 98. Optimizing Functional Components with React.memo()
+// tut 101 e na red - 100. PureComponents instead of shouldComponentUpdate
