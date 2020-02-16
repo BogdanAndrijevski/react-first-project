@@ -121,4 +121,4 @@ shouldComponentUpdate(nextProps, nextState){
 
 export default App;
 
-// tut 101 e na red - 100. PureComponents instead of shouldComponentUpdate
+// tut 103 e na red - 102. Rendering Adjacent JSX Elements
