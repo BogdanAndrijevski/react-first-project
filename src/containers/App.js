@@ -3,8 +3,9 @@ import classes from './App.css';
 // import Person from '../components/Persons/Person/Person';
 import Persons from '../components/Persons/Persons';
 import Cockpit from '../components/Cockpit/Cockpit';
-import WithClass from '../hoc/WithClass';
+import withClass from '../hoc/withClass';
 
+import Aux from '../hoc/Auxiliary.js';
 
 class App extends Component {
   constructor(props){
@@ -103,7 +104,7 @@ shouldComponentUpdate(nextProps, nextState){
 
     return (
       
-    <WithClass classes={classes.App}>
+    <Aux>
       <button onClick={() => {this.setState({showCockpit : false})}}>Remove Cockpit</button>
       { this.state.showCockpit ? <Cockpit
       title={this.props.appTitle}
@@ -112,13 +113,13 @@ shouldComponentUpdate(nextProps, nextState){
       clicked={this.togglePersonsHandler}
       /> : null}
       {persons}
-    </WithClass>
+    </Aux>
 
     );
     // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
   }
 }
 
-export default App;
+export default withClass(App, classes.App);
 
-// tut 106 e na red - 105. Higher Order Components (HOC) - Introduction
+// tut 107 e na red - 106. Another Form of HOCs
