@@ -122,4 +122,4 @@ shouldComponentUpdate(nextProps, nextState){
 
 export default withClass(App, classes.App);
 
-// tut 107 e na red - 106. Another Form of HOCs
+// tut 108 e na red - 107. Passing Unknown Props
