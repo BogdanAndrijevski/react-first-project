@@ -3,7 +3,7 @@ import classes from './App.css';
 // import Person from '../components/Persons/Person/Person';
 import Persons from '../components/Persons/Persons';
 import Cockpit from '../components/Cockpit/Cockpit';
-
+import WithClass from '../hoc/WithClass';
 
 
 class App extends Component {
@@ -103,7 +103,7 @@ shouldComponentUpdate(nextProps, nextState){
 
     return (
       
-    <div className={classes.App}>
+    <WithClass classes={classes.App}>
       <button onClick={() => {this.setState({showCockpit : false})}}>Remove Cockpit</button>
       { this.state.showCockpit ? <Cockpit
       title={this.props.appTitle}
@@ -112,7 +112,7 @@ shouldComponentUpdate(nextProps, nextState){
       clicked={this.togglePersonsHandler}
       /> : null}
       {persons}
-    </div>
+    </WithClass>
 
     );
     // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
@@ -121,4 +121,4 @@ shouldComponentUpdate(nextProps, nextState){
 
 export default App;
 
-// tut 105 e na red - 104. Using React.Fragment
+// tut 106 e na red - 105. Higher Order Components (HOC) - Introduction
