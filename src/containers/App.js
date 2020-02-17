@@ -121,4 +121,4 @@ shouldComponentUpdate(nextProps, nextState){
 
 export default App;
 
-// tut 103 e na red - 102. Rendering Adjacent JSX Elements
+// tut 105 e na red - 104. Using React.Fragment
