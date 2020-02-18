@@ -128,4 +128,4 @@ class App extends Component {
 
 export default withClass(App, classes.App);
 
-// tut 109 e na red - 108. Setting State Correctly
+// tut 110 e na red - 109. Using PropTypes
