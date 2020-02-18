@@ -128,4 +128,4 @@ class App extends Component {
 
 export default withClass(App, classes.App);
 
-// tut 110 e na red - 109. Using PropTypes
+// tut 111 e na red - 110. Using Refs
