@@ -140,4 +140,4 @@ class App extends Component {
 
 export default withClass(App, classes.App);
 
-// tut 114 e na red - 113. Using the Context API
+// tut 115 e na red - 114. contextType & useContext()
